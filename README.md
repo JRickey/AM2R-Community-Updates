@@ -1,3 +1,7 @@
+# ATTENTION!
+
+Further development of AM2R has been occurring on a private branch. This repository has been archived to prevent well-intentioned effort towards issues and pull requests going to waste. If you have feedback or bugs to report, please instead let us know about them on the Official AM2R Discord Server so that we may track them internally: https://discord.gg/YTQnkAJ
+
 # AM2R-Community-Updates
 
 **Please do not request help until you have read this entire document. The vast majority of your questions should be answered within it, and we will be able to easily tell if you have not followed the installation instructions thoroughly.**
