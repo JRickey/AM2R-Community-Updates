@@ -154,6 +154,11 @@ if (keyboard_check(global.opkeybtn_menu2)) {
 
 
 if (gamepad_is_supported()) {
+    // UWP and desktop controllers may reconnect in a different device slot.
+    // Keep the active controller while connected; only rescan after loss.
+    if (!gamepad_is_connected(global.gamepadIndex)) {
+        global.gamepadIndex = input_gamepad_find();
+    }
     if (gamepad_is_connected(global.gamepadIndex) && global.opxjoyenable) {
         if (global.opxjoyvib) gamepad_set_vibration(global.gamepadIndex, global.vibL, global.vibR);
         xjoyx = gamepad_axis_value(global.gamepadIndex, gp_axislh);

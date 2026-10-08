@@ -13,3 +13,14 @@ help.rtf
 extensions
 AM2R.exe
 data.win
+
+# Local port inputs, reports, packages, and signing material.
+.local/
+build/
+__pycache__/
+*.pyc
+*.appx
+*.appxbundle
+*.msix
+*.pfx
+*.cer
